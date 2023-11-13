@@ -12,7 +12,7 @@ pipeline {
 		}
 		stage('Test') {
 			steps {
-                sh 'php ./vendor/bin/phpunit'
+                sh 'php ./vendor/bin/phpunit tests/GumballMachineTest.php'
             }
 		}
 	}
